@@ -73,7 +73,7 @@ Full_data = rbind(Xtrain, Xtest)
 #Extract only the measurement that contain mean and standard deviation
 Full_data = Full_data[,grep("\\.mean\\.",names(Full_data))] + Full_data[,grep("\\.std\\.",names(Full_data))]
 
-#Combine with the label and subject
+#Combine with the activity and subject
 Full_data = cbind(Full_data, yFull, subjectFUll)
 
 #Replace numbers of label with activity names
